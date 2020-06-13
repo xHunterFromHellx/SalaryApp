@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:saveEnabled="false"
+            android:scrollHorizontally="false"
+            android:text="Time is now\n"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:timePickerMode="spinner"
+
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="0dp"
+            android:textAlignment="center"
+            android:text="Date is\n"
+            />
+
+
+    </LinearLayout>
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:background="@color/bgColor"
+            android:text="@string/start" />
+
+        <Button
+            android:id="@+id/endButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@color/bgColor"
+            android:text="End" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgColor"
+            android:text="Next"/>
+    </LinearLayout>
+</LinearLayout>

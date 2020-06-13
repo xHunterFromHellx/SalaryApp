@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SalaryApp</string>
+    <string name="start_time">start time</string>
+    <string name="end_time">end time</string>
+    <string name="hours">HH</string>
+    <string name="minutes">MM</string>
+    <string name="time_fill">\nFill start and end of your work\n</string>
+    <string name="start">start</string>
+</resources>

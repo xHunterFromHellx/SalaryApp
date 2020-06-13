@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vlad.salaryapp.SummaryActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your salary per hour:"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/salaryPerHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="50dp"
+            android:maxWidth="100dp"
+            android:inputType="number"
+            android:maxLength="4"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n"/>
+<Button
+    android:id="@+id/dayButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    android:text="For day"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n"/>
+
+    <Button
+        android:id="@+id/monthButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor"
+        android:text="For month"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n"/>
+
+    <Button
+        android:id="@+id/yearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor"
+        android:text="For year"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+    <TextView
+        android:id="@+id/reportSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:linksClickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorLink="@color/colorPrimary"
+        android:autoLink="web"
+        android:text="Donation: http:/paypal.me/thelynxis"
+        android:gravity="bottom"/>
+
+</LinearLayout>
